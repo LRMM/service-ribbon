@@ -13,3 +13,19 @@ spring:
       client:
         url: http://localhost:8004
 
+redis:
+        host: 120.79.23.207
+        port: 6379
+        database: 0
+        pool:
+            max-active: 50
+            maxTotal: 50
+            max-idle: 10
+            min-idle: 3
+            max-wait: -1
+            testWhileIdle: true
+            minEvictableIdleTimeMillis: 60000
+            timeBetweenEvictionRunsMillis: 30000
+            numTestsPerEvictionRun: 3
+        timeout: 1000
+
